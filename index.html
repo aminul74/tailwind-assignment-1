@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      .header-wrapper {
+        background: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="sticky top-0 z-40 w-full backdrop-blur flex-none header-wrapper"
+    >
+      <div class="max-w-8xl mx-auto">
+        <div class="py-4 border-b px-4">
+          <div class="relative flex items-center">
+            <a
+              class="mr-3 flex-none w-[2.0625rem] overflow-hidden md:w-auto"
+              href="/"
+              ><span class="sr-only">Tailwind CSS home page</span>
+
+              <img
+                class="h-8 w-auto"
+                src="./images/logo.png"
+                alt="Your Company"
+              />
+            </a>
+            <div class="relative" data-headlessui-state="">
+              <div class="hidden sm:ml-6 sm:block">
+                <a
+                  style="background-color: #03aa6d"
+                  ;
+                  href="#"
+                  class="bg-green-700 text-black px-3 py-5 text-sm font-medium"
+                  aria-current="page"
+                  >Tutorials</a
+                >
+                <a
+                  href="#"
+                  class="text-black-300 hover:bg-green-700 hover:text-black px-3 py-5 text-sm font-medium"
+                  >Exercises</a
+                >
+                <a
+                  href="#"
+                  class="text-black-300 hover:bg-green-700 hover:text-black px-3 py-5 text-sm font-medium"
+                  >Get Certified</a
+                >
+                <a
+                  href="#"
+                  class="text-black-300 hover:bg-green-700 hover:text-black px-3 py-5 text-sm font-medium"
+                  >Services</a
+                >
+              </div>
+            </div>
+
+            <div class="relative hidden lg:flex items-center ml-auto">
+              <nav class="text-sm leading-6">
+                <div class="flex space-x-8">
+                  <button
+                    type="button"
+                    class="inline-block rounded-full px-6 pb-[6px] pt-2 text-sm font-medium capitalize leading-normal transition duration-150 ease-in-out hover:border-primary-accent-100 hover:bg-neutral-500 hover:bg-opacity-10 focus:border-primary-accent-100 focus:outline-none focus:ring-0 active:border-primary-accent-200 dark:text-primary-100 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
+                    data-te-ripple-init
+                  >
+                    Bootcamps
+                  </button>
+                  <button
+                    type="button"
+                    class="inline-block rounded-full px-6 pb-[6px] pt-2 text-sm font-medium capitalize leading-normal transition duration-150 ease-in-out hover:border-primary-accent-100 hover:bg-neutral-500 hover:bg-opacity-10 focus:border-primary-accent-100 focus:outline-none focus:ring-0 active:border-primary-accent-200 dark:text-primary-100 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
+                    data-te-ripple-init
+                  >
+                    Spaces
+                  </button>
+                  <button
+                    type="button"
+                    class="inline-block rounded-full px-6 pb-[6px] pt-2 text-sm font-medium capitalize leading-normal transition duration-150 ease-in-out hover:border-primary-accent-100 hover:bg-neutral-500 hover:bg-opacity-10 focus:border-primary-accent-100 focus:outline-none focus:ring-0 active:border-primary-accent-200 dark:text-primary-100 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
+                    data-te-ripple-init
+                  >
+                    Upgrade
+                  </button>
+                </div>
+              </nav>
+            </div>
+            <button
+              type="button"
+              class="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+              id="user-menu-button"
+              aria-expanded="false"
+              aria-haspopup="true"
+            >
+              <span class="absolute -inset-1.5"></span>
+              <span class="sr-only">Open user menu</span>
+              <img
+                class="h-9 w-9 rounded-full"
+                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                alt=""
+              />
+            </button>
+            <div class="ml-2 -my-1 lg:hidden">
+              <button
+                type="button"
+                class="text-slate-500 w-8 h-8 flex items-center justify-center hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300"
+              >
+                <span class="sr-only">Navigation</span
+                ><svg width="24" height="24" fill="none" aria-hidden="true">
+                  <path
+                    d="M12 6v.01M12 12v.01M12 18v.01M12 7a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm0 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm0 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                style="
+                  position: fixed;
+                  top: 1px;
+                  left: 1px;
+                  width: 1px;
+                  height: 0;
+                  padding: 0;
+                  margin: -1px;
+                  overflow: hidden;
+                  clip: rect(0, 0, 0, 0);
+                  white-space: nowrap;
+                  border-width: 0;
+                  display: none;
+                "
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-gray-800">
+        <div class="mx-auto px-2 sm:px-6 lg:px-8">
+          <div class="flex h-16 items-center space-x-14">
+            <div class="hidden sm:ml-6 sm:block">
+              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+              <a
+                href="#"
+                class="uppercase text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-5 text-sm font-medium"
+                >Html</a
+              >
+              <a
+                href="#"
+                class="uppercase text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-5 text-sm font-medium"
+                >Css</a
+              >
+              <a
+                href="#"
+                class="uppercase text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-5 text-sm font-medium"
+                >Javascript</a
+              >
+              <a
+                href="#"
+                class="uppercase text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-5 text-sm font-medium"
+                >SQl</a
+              >
+              <a
+                href="#"
+                class="uppercase text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-5 text-sm font-medium"
+                >Python</a
+              >
+              <a
+                href="#"
+                class="uppercase text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-5 text-sm font-medium"
+                >Java</a
+              >
+              <a
+                href="#"
+                class="uppercase text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-5 text-sm font-medium"
+                >How To</a
+              >
+              <a
+                href="#"
+                class="uppercase text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-5 text-sm font-medium"
+                >W3.CSS</a
+              >
+              <a
+                href="#"
+                class="uppercase text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-5 text-sm font-medium"
+                >C</a
+              >
+              <a
+                href="#"
+                class="uppercase text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-5 text-sm font-medium"
+                >C#</a
+              >
+              <a
+                href="#"
+                class="uppercase text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-5 text-sm font-medium"
+                >Bootstrap</a
+              >
+              <a
+                href="#"
+                class="uppercase text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-5 text-sm font-medium"
+                >React</a
+              >
+              <a
+                href="#"
+                class="uppercase text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-5 text-sm font-medium"
+                >MySQL</a
+              >
+              <a
+                href="#"
+                class="uppercase text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-5 text-sm font-medium"
+                >jQuery</a
+              >
+              <a
+                href="#"
+                class="uppercase text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-5 text-sm font-medium"
+                >Excel</a
+              >
+              <a
+                href="#"
+                class="uppercase text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-5 text-sm font-medium"
+                >XML</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2nd -->
+
+    <Learn>
+      <div style="background-color: #282a35" class="h-auto text-white">
+        <div class="flex flex-col items-center justify-center">
+          <h1
+            class="p-4 text-2xl md:text-4xl lg:text-6xl font-bold text-center"
+          >
+            Learn to Code
+          </h1>
+          <h2
+            style="color: #ffc0c7"
+            class="p-4 text-2xl md:text-4xl lg:text-xl font-bold text-center"
+          >
+            With the world's largest web developer site.
+          </h2>
+          <!-- search -->
+          <div class="p-4">
+            <form>
+              <div class="flex">
+                <div class="relative w-full">
+                  <input
+                    type="search"
+                    id="location-search"
+                    class="block p-3 w-80 z-40 text-sm text-gray-900 bg-gray-50 rounded-full dark:bg-white-700 dark:placeholder-gray-400 dark:text-black"
+                    placeholder="Search our tutorials"
+                    required
+                  />
+                  <button
+                    type="submit"
+                    class="absolute top-0 right-0 h-full p-2.5 text-sm font-medium text-white bg-green-700 rounded-e-full"
+                  >
+                    <svg
+                      class="w-4 h-4"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                      />
+                    </svg>
+                    <span class="sr-only">Search</span>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <a
+            href="#"
+            class="p-4 text-2xl md:text-xl lg:text-xl font-bold text-center text-white-500 hover:text-green-500 underline"
+            >Not Sure Where To Begin?</a
+          >
+        </div>
+      </div>
+    </Learn>
+    <!-- 3rd -->
+    <Extranel_bg>
+      <div
+        class="bg-cover bg-center h-16 bg-cover"
+        style="background-image: url('./images/bg.png')"
+      ></div>
+    </Extranel_bg>
+    <!-- 4th -->
+
+    <div class="first_course">
+      <div class="flex">
+        <div
+          style="background-color: #d9eee1"
+          class="flex flex-col items-center justify-center w-full space-y-4"
+        >
+          <h1
+            class="p-4 text-7xl md:text-5xl lg:text-7xl font-bold text-center"
+          >
+            HTML
+          </h1>
+          <h3
+            class="p-4 text-xl md:text-4xl lg:text-xl font-bold text-center text-black-300"
+          >
+            The language for building web pages
+          </h3>
+          <button
+            style="background-color: #03aa6d"
+            type="button"
+            class="w-48 h-12 text-white font-bold py-2 px-4 rounded-full"
+          >
+            Learn HTML
+          </button>
+          <button
+            style="background-color: #fff080"
+            type="button"
+            class="w-48 h-12 text-black font-bold py-2 px-4 rounded-full"
+          >
+            Video Tutorial
+          </button>
+          <button
+            style="background-color: #000000"
+            type="button"
+            class="w-48 h-12 text-white font-bold py-2 px-4 rounded-full"
+          >
+            HTML Reference
+          </button>
+          <button
+            style="background-color: #ffb3bb"
+            type="button"
+            class="w-48 h-12 text-black font-bold py-2 px-4 rounded-full"
+          >
+            Get Certified
+          </button>
+        </div>
+
+        <!-- 2nd column -->
+        <div style="background-color: #d9eee1" class="w-full p-8">
+          <div
+            style="background-color: #e7e9eb"
+            class="max-w-sm bg-white border border-gray-300 rounded-lg dark:border-white-700 pt-10"
+          >
+            <h5
+              class="mb-4 ml-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black"
+            >
+              HTML Example
+            </h5>
+            <a href="#">
+              <img class="rounded-t-lg" src="./images/card_1.png" alt="" />
+            </a>
+            <div class="p-5">
+              <a
+                href="#"
+                style="background-color: #03aa6d"
+                class="inline-flex items-center px-6 py-3 text-sm font-medium text-center text-white rounded-full"
+              >
+                Try it yourself
+                <svg
+                  class="w-3.5 h-3.5 ml-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 5th -->
+    <div class="second_course">
+      <div class="flex">
+        <div
+          style="background-color: #fff4a3"
+          class="flex flex-col items-center justify-center w-full space-y-4"
+        >
+          <h1
+            class="p-4 text-7xl md:text-5xl lg:text-7xl font-bold text-center"
+          >
+            CSS
+          </h1>
+          <h3
+            class="p-2 text-xl md:text-4xl lg:text-xl font-bold text-center text-black-300"
+          >
+            The language for styling web pages
+          </h3>
+          <button
+            style="background-color: #03aa6d"
+            type="button"
+            class="w-48 h-12 text-white font-bold py-2 px-4 rounded-full"
+          >
+            Learn CSS
+          </button>
+          <button
+            style="background-color: #000000"
+            type="button"
+            class="w-48 h-12 text-white font-bold py-2 px-4 rounded-full"
+          >
+            CSS Reference
+          </button>
+          <button
+            style="background-color: #ffb3bb"
+            type="button"
+            class="w-48 h-12 text-white font-bold py-2 px-4 rounded-full"
+          >
+            Get Certified
+          </button>
+        </div>
+
+        <!--Second_course 2nd column -->
+        <div style="background-color: #fff4a3" class="w-full p-8">
+          <div
+            style="background-color: #e7e9eb"
+            class="max-w-sm bg-white border border-gray-300 rounded-lg dark:border-white-700 pt-10"
+          >
+            <h5
+              class="mb-4 ml-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black"
+            >
+              CSS Example
+            </h5>
+            <a href="#">
+              <img class="rounded-t-lg" src="./images/card_2.png" alt="" />
+            </a>
+            <div class="p-5">
+              <a
+                href="#"
+                style="background-color: #03aa6d"
+                class="inline-flex items-center px-6 py-3 text-sm font-medium text-center text-white rounded-full"
+              >
+                Try it yourself
+                <svg
+                  class="w-3.5 h-3.5 ml-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="third_course">
+      <div class="flex">
+        <div
+          style="background-color: #282a35"
+          class="flex flex-col items-center justify-center w-full space-y-4"
+        >
+          <h1
+            class="p-4 text-7xl md:text-5xl lg:text-7xl font-bold text-center text-white"
+          >
+            JavaScript
+          </h1>
+          <h3
+            class="p-2 text-xl md:text-4xl lg:text-xl font-bold text-center text-white"
+          >
+            The language for programming web pages
+          </h3>
+          <button
+            style="background-color: #03aa6d"
+            type="button"
+            class="w-48 h-12 text-white font-bold py-2 px-4 rounded-full"
+          >
+            Learn Javascript
+          </button>
+          <button
+            style="background-color: #e7e9eb"
+            type="button"
+            class="w-48 h-12 text-black font-bold py-2 px-4 rounded-full"
+          >
+            Javascript Reference
+          </button>
+          <button
+            style="background-color: #ffb3bb"
+            type="button"
+            class="w-48 h-12 text-black font-bold py-2 px-4 rounded-full"
+          >
+            Get Certified
+          </button>
+        </div>
+
+        <!--Third_course 2nd column -->
+        <div style="background-color: #282a35" class="w-full p-8">
+          <div
+            style="background-color: #e7e9eb"
+            class="max-w-sm bg-white border border-gray-300 rounded-lg dark:border-white-700 pt-10"
+          >
+            <h5
+              class="mb-4 ml-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black"
+            >
+              Javascript Example
+            </h5>
+            <a href="#">
+              <img class="rounded-t-lg" src="./images/card_3.png" alt="" />
+            </a>
+            <div class="p-5">
+              <a
+                href="#"
+                style="background-color: #03aa6d"
+                class="inline-flex items-center px-6 py-3 text-sm font-medium text-center text-white rounded-full"
+              >
+                Try it yourself
+                <svg
+                  class="w-3.5 h-3.5 ml-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fourth_course">
+      <div class="flex">
+        <div
+          style="background-color: #f3ecea"
+          class="flex flex-col items-center justify-center w-full space-y-4"
+        >
+          <h1
+            class="p-4 text-7xl md:text-5xl lg:text-7xl font-bold text-center text-black"
+          >
+            Python
+          </h1>
+          <h3
+            class="p-2 text-xl md:text-4xl lg:text-xl font-bold text-center text-black"
+          >
+            A popular programming language
+          </h3>
+          <button
+            style="background-color: #03aa6d"
+            type="button"
+            class="w-48 h-12 text-white font-bold py-2 px-4 rounded-full"
+          >
+            Learn Python
+          </button>
+          <button
+            style="background-color: #000000"
+            type="button"
+            class="w-48 h-12 text-white font-bold py-2 px-4 rounded-full"
+          >
+            Python Reference
+          </button>
+          <button
+            style="background-color: #ffb3bb"
+            type="button"
+            class="w-48 h-12 text-black font-bold py-2 px-4 rounded-full"
+          >
+            Get Certified
+          </button>
+        </div>
+
+        <!--Third_course 2nd column -->
+        <div style="background-color: #f3ecea" class="w-full p-8">
+          <div
+            style="background-color: #e7e9eb"
+            class="max-w-sm bg-white border border-gray-300 rounded-lg dark:border-white-700 pt-10"
+          >
+            <h5
+              class="mb-4 ml-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black"
+            >
+              Python Example
+            </h5>
+            <a href="#">
+              <img class="rounded-t-lg" src="./images/card_4.png" alt="" />
+            </a>
+            <div class="p-5">
+              <a
+                href="#"
+                style="background-color: #03aa6d"
+                class="inline-flex items-center px-6 py-3 text-sm font-medium text-center text-white rounded-full"
+              >
+                Try it yourself
+                <svg
+                  class="w-3.5 h-3.5 ml-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fifth_course">
+      <div class="flex">
+        <div
+          style="background-color: #96d4d4"
+          class="flex flex-col items-center justify-center w-full space-y-4"
+        >
+          <h1
+            class="p-4 text-7xl md:text-5xl lg:text-7xl font-bold text-center text-black"
+          >
+            SQL
+          </h1>
+          <h3
+            class="p-2 text-xl md:text-4xl lg:text-xl font-bold text-center text-black"
+          >
+            A language for accessing databases
+          </h3>
+          <button
+            style="background-color: #03aa6d"
+            type="button"
+            class="w-48 h-12 text-white font-bold py-2 px-4 rounded-full"
+          >
+            Learn SQL
+          </button>
+          <button
+            style="background-color: #000000"
+            type="button"
+            class="w-48 h-12 text-white font-bold py-2 px-4 rounded-full"
+          >
+            SQL Reference
+          </button>
+          <button
+            style="background-color: #ffb3bb"
+            type="button"
+            class="w-48 h-12 text-black font-bold py-2 px-4 rounded-full"
+          >
+            Get Certified
+          </button>
+        </div>
+
+        <!--Third_course 2nd column -->
+        <div style="background-color: #96d4d4" class="w-full p-8">
+          <div
+            style="background-color: #e7e9eb"
+            class="max-w-sm bg-white border border-gray-300 rounded-lg dark:border-white-700 pt-10"
+          >
+            <h5
+              class="mb-4 ml-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black"
+            >
+              Python Example
+            </h5>
+            <a href="#">
+              <img class="rounded-t-lg" src="./images/card_4.png" alt="" />
+            </a>
+            <div class="p-5">
+              <a
+                href="#"
+                style="background-color: #03aa6d"
+                class="inline-flex items-center px-6 py-3 text-sm font-medium text-center text-white rounded-full"
+              >
+                Try it yourself
+                <svg
+                  class="w-3.5 h-3.5 ml-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Learn_course with 2 grid  #FFB3BB-->
+
+    <div class="Learn_course_wrapper" style="background-color: #282a35">
+      <div class="flex justify-center">
+        <div
+          style="background-color: #ffb3bb"
+          class="m-4 w-1/3 p-8 border rounded-lg text-center"
+        >
+          <a href="#">
+            <h2 class="mb-4 text-4xl font-bold tracking-tight">PHP</h2>
+          </a>
+          <p class="mb-4 font-normal text-base text-[#3a3a3a]">
+            A web server programming language
+          </p>
+          <a
+            href="#"
+            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-full hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            Read more
+          </a>
+        </div>
+
+        <div
+          style="background-color: #ffb3bb"
+          class="m-4 p-8 w-1/3 border rounded-lg text-center"
+        >
+          <a href="#">
+            <h2 class="mb-4 text-4xl font-bold tracking-tight">PHP</h2>
+          </a>
+          <p class="mb-4 font-normal text-base text-[#3a3a3a]">
+            A web server programming language
+          </p>
+          <a
+            href="#"
+            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-full hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            Read more
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer_wrapper" style="background-color: #fff">
+      <div class="flex w-full justify-center space-x-8 py-8">
+        <ul class="text-center text-sm">
+          <li class="text-xl font-bold mb-2">Top Tutorials</li>
+          <li><a href="#">HTML Tutorial</a></li>
+          <li><a href="#">CSS Tutorial</a></li>
+          <li><a href="#">JavaScript Tutorial</a></li>
+          <li><a href="#">How To</a></li>
+          <li><a href="#">SQL Tutorial</a></li>
+          <li><a href="#">Python Tutorial</a></li>
+          <li><a href="#">W3 CSS</a></li>
+          <li><a href="#">Bootstrap Tutorial</a></li>
+          <li><a href="#">PHP Tutorial</a></li>
+          <li><a href="#">Java Tutorial</a></li>
+          <li><a href="#">C++ Tutorial</a></li>
+          <li><a href="#">jQuery Tutorial</a></li>
+        </ul>
+
+        <ul class="text-center text-sm">
+          <li class="text-xl font-bold mb-2">Top References</li>
+          <li><a href="#">HTML Tutorial</a></li>
+          <li><a href="#">CSS Tutorial</a></li>
+          <li><a href="#">JavaScript Tutorial</a></li>
+          <li><a href="#">How To</a></li>
+          <li><a href="#">SQL Tutorial</a></li>
+          <li><a href="#">Python Tutorial</a></li>
+          <li><a href="#">W3 CSS</a></li>
+          <li><a href="#">Bootstrap Tutorial</a></li>
+          <li><a href="#">PHP Tutorial</a></li>
+          <li><a href="#">Java Tutorial</a></li>
+          <li><a href="#">C++ Tutorial</a></li>
+          <li><a href="#">jQuery Tutorial</a></li>
+        </ul>
+        <ul class="text-center text-sm">
+          <li class="text-xl font-bold mb-2">Top Examples</li>
+          <li><a href="#">HTML Tutorial</a></li>
+          <li><a href="#">CSS Tutorial</a></li>
+          <li><a href="#">JavaScript Tutorial</a></li>
+          <li><a href="#">How To</a></li>
+          <li><a href="#">SQL Tutorial</a></li>
+          <li><a href="#">Python Tutorial</a></li>
+          <li><a href="#">W3 CSS</a></li>
+          <li><a href="#">Bootstrap Tutorial</a></li>
+          <li><a href="#">PHP Tutorial</a></li>
+          <li><a href="#">Java Tutorial</a></li>
+          <li><a href="#">C++ Tutorial</a></li>
+          <li><a href="#">jQuery Tutorial</a></li>
+        </ul>
+        <ul class="text-center text-sm">
+          <li class="text-xl font-bold mb-2">Get Certified</li>
+          <li><a href="#">HTML Tutorial</a></li>
+          <li><a href="#">CSS Tutorial</a></li>
+          <li><a href="#">JavaScript Tutorial</a></li>
+          <li><a href="#">How To</a></li>
+          <li><a href="#">SQL Tutorial</a></li>
+          <li><a href="#">Python Tutorial</a></li>
+          <li><a href="#">W3 CSS</a></li>
+          <li><a href="#">Bootstrap Tutorial</a></li>
+          <li><a href="#">PHP Tutorial</a></li>
+          <li><a href="#">Java Tutorial</a></li>
+          <li><a href="#">C++ Tutorial</a></li>
+          <li><a href="#">jQuery Tutorial</a></li>
+        </ul>
+      </div>
+      <div class="w-full px-4"><hr /></div>
+      <div class="w-full py-8">
+        <div class="px-8">
+          <p class="text-gray-300 text-sm text-center">
+            W3Schools is optimized for learning and training. Examples might be
+            simplified to improve reading and learning. Tutorials, references,
+            and examples are constantly reviewed to avoid errors, but we cannot
+            warrant full correctness of all content. While using W3Schools, you
+            agree to have read and accepted our terms of use, cookie and privacy
+            policy. <br /><br />
+            Copyright 1999-2023 by Refsnes Data. All Rights Reserved. W3Schools
+            is Powered by W3.CSS.
+            <br />
+            <img
+              class="h-8 w-auto mx-auto my-2"
+              src="./images/logo.png"
+              alt="Your Company"
+            />
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
